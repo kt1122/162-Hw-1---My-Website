@@ -1,119 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>  <!-- Info about the page that is not displayed. <style>, <link>, <meta>, <script>, <noscript> -->
-        <title>
-            Katie Sharp's Personal Website
-        </title>
-        <style>
-            body 
-            {  
-                background-color: rgb(241, 221, 233);
-                color: rgb(120, 69, 99) 
-            }
-            .box 
-            {
-                background-color: rgb(216, 207, 214);
-                padding: 10px; 
-                width: 70%; 
-                margin-top: 15px;
-                margin-bottom: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                text-align: center;
-                font-size: 18px;
-            }
-            img 
-            {
-            width: 30%; 
-            height: auto;
-            }
-           
-            .textAlts
-            {
-                font-size: 20px;
-                margin-left: 100px;
-                margin-right: 100px;
-            }
-
-            .link 
-            {
-                text-decoration: none; /* Removes underline by default */
-                color: inherit; /* Inherit color from parent */
-            }
-
-            .link:hover 
-            {
-                text-decoration: underline; /* Underlines the link on hover */
-            }
-
-
-            .menu-bar 
-            {
-                display: flex;
-                justify-content: space-around;
-                background-color: rgb(216, 207, 214);
-                padding: 10px; 
-                width: 70%; 
-                margin-top: 15px;
-                margin-bottom: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                text-align: center;
-                font-size: 20px;
-            }
-
-            @media (max-width: 800px) 
-            {
-                .box
-                {
-                    width: 90%; 
-                }
-                .menu-bar
-                {
-                    width: 90%;
-                    font-size: 15px;
-                }
-                img 
-                {
-                    width: 50%; 
-                    margin-bottom: 10px; 
-                }
-                .textAlts
-                {
-                    font-size: 15px;
-                    margin-left: 30px;
-                    margin-right: 30px;
-                    margin-bottom: 25px;
-                }
-            }
+  <head>
+    <!-- 
+            Write-up:
             
+            For this assignment, I wanted to create something that could fulfill the requirements 
+            given but also be useful in my professional life following graduation. I have never
+            written in HTML or CSS so there was a bit of a learning curve in getting started with 
+            this assignment. I had a hard time figuring out how to make my page responsive, but after
+            doing some research as well as looking at other websites HTML online, I was able to figure
+            out how to get the page to change based on if it was on a computer or a phone. I also 
+            had quite a hard time spacing out the menu at the top of my page. I couldn't get 
+            "Home Hobbies Contact" to be evenly spaced out in a responsive way, but then I discovered
+            how to set the viewport so that content moved "with-device-width" and that essentially
+            fixed all of my problems. I hope to continue improving this webpage in the future and
+            turn it into a sort of portfolio that contains information that future employers will
+            be interested in seeing like past projects or places I have worked in the industry. 
+            That's why I was particularly interested in configuring the "Contact" page to link to my Github. 
+            I also made the icons for Github and LinkedIn increase in size when you hover over them as well
+            as link them to my Github and LinkedIn when clicked. I also wanted to design my page in a way that
+            is professional but not boring, so I used pink which may or may not be an uncommon color to use 
+            for a webpage like this, but I think it adds my own personal character to the page. 
 
-        </style>
-        <meta charset="UTF-8"> <!-- can include other things to, see what metadeta prof wants-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    </head>
-    
-    <body>
-        <div class="box">
-            <h1>Katie Sharp's Personal Website</h1>
-        </div>
-        <div class="menu-bar">
-            <a index.html" class="link"><p class="textAlts">Home</p></a>
-            <a href="hobbies.html" class="link"><p class="textAlts">Hobbies</p></a>                                 
-            <a href="contact.html" class="link"><p class="textAlts">Contact</p></a>
-        </div>
-        <div class="box">
-            <br><img src="linkedInPic.png" alt="Katie smiling at the camera with a blurred background of trees behind her.">
-            <p class="textAlts"> Hi there! My name is Katie and I am a computer science student at UC Davis. Thanks for coming to 
-                my website. Here you can learn more about who I am, as well as contact me or find me on LinkedIn and other social media platforms. 
-            </p>
-        </div>
-    </body>
+        -->
+    <title>Katie Sharp's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-    <footer>
-        <div class="box">
-            <p class="textAlts">&copy; 2024 Katie Sharp</p>
-        </div>
-    </footer>
+  <body>
+    <section class="box">
+      <h1>Katie Sharp's Personal Website</h1>
+    </section>
+    <section class="menu-bar">
+      <a
+        href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/162assignment1.html"
+        class="link"
+        ><p class="textAlts">Home</p></a
+      >
+      <a
+        href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/hobbies.html"
+        class="link"
+        ><p class="textAlts">Hobbies</p></a
+      >
+      <a
+        href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/contact.html"
+        class="link"
+        ><p class="textAlts">Contact</p></a
+      >
+    </section>
+    <section class="box">
+      <br /><img
+        src="/Users/Katie/Desktop/ECS 162/Hw 1/linkedInPic.png"
+        alt="Katie smiling at the camera with a blurred background 
+            of trees behind her."
+        title="Photo of Katie Sharp in the UC Davis Arboretum."
+      />
+      <p class="textAlts">
+        Hi there! My name is Katie and I am a computer science student at UC
+        Davis. Thanks for coming to my website. Here you can learn more about
+        who I am, as well as contact me or find me on LinkedIn and other social
+        media platforms.
+      </p>
+    </section>
+  </body>
+
+  <footer>
+    <section class="box">
+      <p class="textAlts">&copy; 2024 Katie Sharp</p>
+    </section>
+  </footer>
 </html>
