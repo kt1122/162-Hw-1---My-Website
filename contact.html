@@ -1,111 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>  <!-- Info about the page that is not displayed. <style>, <link>, <meta>, <script>, <noscript> -->
-        <title>
-            Katie Sharp's Personal Website
-        </title>
-        <style>
-            body 
-            {  
-                background-color: rgb(241, 221, 233);
-                color: rgb(120, 69, 99) 
-            }
-            .box 
-            {
-                background-color: rgb(216, 207, 214);
-                padding: 10px; 
-                width: 70%; 
-                margin-top: 15px;
-                margin-bottom: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                text-align: center;
-                font-size: 18px;
-            }
-            img 
-            {
-            width: 30%; 
-            height: auto;
-            }
-           
-            .textAlts
-            {
-                font-size: 20px;
-                margin-left: 100px;
-                margin-right: 100px;
-            }
+  <head>
+    <!-- Info about the page that is not displayed. <style>, <link>, <meta>, <script>, <noscript> -->
+    <title>Katie Sharp's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-            .link 
-            {
-                text-decoration: none; /* Removes underline by default */
-                color: inherit; /* Inherit color from parent */
-            }
+  <section class="box">
+    <h1>Katie Sharp's Personal Website</h1>
+  </section>
 
-            .link:hover 
-            {
-                text-decoration: underline; /* Underlines the link on hover */
-            }
+  <section class="menu-bar">
+    <a
+      href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/162assignment1.html"
+      class="link"
+      ><p class="textAlts">Home</p></a
+    >
+    <a
+      href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/hobbies.html"
+      class="link"
+      ><p class="textAlts">Hobbies</p></a
+    >
+    <a
+      href="file:///Users/Katie/Desktop/ECS%20162/Hw%201/contact.html"
+      class="link"
+      ><p class="textAlts">Contact</p></a
+    >
+  </section>
 
-            .menu-bar 
-            {
-                display: flex;
-                justify-content: space-around;
-                background-color: rgb(216, 207, 214);
-                padding: 10px; 
-                width: 70%; 
-                margin: 15px auto;
-                text-align: center;
-                font-size: 18px;
-            }
+  <body>
+    <section class="box">
+      <p class="textAlts">
+        Thank you for checking out my personal webpage. If you want to follow
+        more of my work or reach out to me, please connect with me on LinkedIn
+        or go to my GitHub. <br /><br />
+        Click on the icons below!
+      </p>
+    </section>
+  </body>
 
-            @media (max-width: 800px) 
-            {
-                .box 
-                {
-                    width: 90%; 
-                }
-                .menu-bar
-                {
-                    width: 90%;
-                }
-                img 
-                {
-                    width: 50%; 
-                    margin-bottom: 10px; 
-                }
-                .textAlts
-                {
-                    font-size: 15px;
-                    margin-left: 30px;
-                    margin-right: 30px;
-                    margin-bottom: 25px;
-                }
-            }
-            
+  <section class="box">
+    <a href="https://github.com/kt1122"
+      ><img src="gitIcon.png" alt="GitHub" class="git-img"
+    /></a>
+    &nbsp;
+    <a href="https://www.linkedin.com/in/katie-s-58273bb7"
+      ><img src="linkedInLogo.png" class="linkedIn-img"
+    /></a>
+  </section>
 
-        </style>
-        <meta charset="UTF-8"> <!-- can include other things to, see what metadeta prof wants-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    </head>
-    
-    <body>
-        <div class="box">
-            <h1>Katie Sharp's Personal Website</h1>
-        </div>
-        <div class="menu-bar">
-            <a href="index.html" class="link"><p class="textAlts">Home</p></a>
-            <a href="hobbies.html" class="link"><p class="textAlts">Hobbies</p></a>                                 
-            <a href="contact.html" class="link"><p class="textAlts">Contact</p></a>
-        </div>
-        <div class="box">
-            <p class="textAlts">Contact meeeeeeee.</p>
-        </div>
-    </body>
-
-    <footer>
-        <div class="box">
-            <p class="textAlts">&copy; 2024 Katie Sharp</p>
-        </div>
-    </footer>
+  <footer>
+    <section class="box">
+      <p class="textAlts">&copy; 2024 Katie Sharp</p>
+    </section>
+  </footer>
 </html>
